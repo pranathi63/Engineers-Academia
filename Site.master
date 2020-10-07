@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+	<script>
+	    $(function () {
+	        $("body,html").mousewheel(function (event, delta) {
+	            this.scrollLeft -= (delta * 30);
+	            event.preventDefault();
+	        });
+	    });
+	</script>
+    
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Sheet1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Sample.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Tiles.css" rel="stylesheet" type="text/css" /></head>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+   
+        .style1
+        {
+            font-family: Cambria;
+            font-size: xx-large;
+            font-variant: small-caps;
+            color: #FFFF00;
+        }
+        
+        #header
+        {
+            width: 1366px;
+        }
+        
+        .style2
+        {
+            height: 91px;
+        }
+        .style3
+        {
+            height: 91px;
+            width: 102px;
+        }
+        
+        .style4
+        {
+            font-family: Cambria;
+            font-size: larger;
+        }
+        .style5
+        {
+            color: #FFFF00;
+        }
+        .style6
+        {
+            color: #4FD243;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header" class="th">
+    <table>
+    <tr>
+    <td class="style3">
+        <span class="style1">
+            <asp:HyperLink ID="Hyper" runat="server"><img src="Images/nav.jpg" title="GoTo Main Page" 
+            style="height: 91px; width: 102px; margin-left: 0px; margin-top: 0px" /></asp:HyperLink>
+            </span></td>
+        <td class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style4">
+        <span class="style5">Engineers</span>
+            <span class="style6">Academia</span>
+            </span>
+            </td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td><td>
+           
+               <a href="home.aspx" title="Logout"><span style="font-size: xx-large; font-variant: small-caps; color:#FFFF00;">
+                   <asp:Label id="Label1" runat="server" Text="Label"></asp:Label></span></span>
+        </td>
+        </tr>
+        </table>
+        </div>
+    <div id="four" class="fo">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder></div>
+    </form>    
+    <div id="foo" class="se">
+    <center><span class="style1">Follow Us On <a href="http://www.facebook.com/enggacademia" target="_blank">
+        <asp:Image runat="server" Height="27px" ImageUrl="~/Images/images.png" 
+            style="margin-left: 22px; margin-top: 1px" Width="29px">
+        </asp:Image></a></span></center>
+    </div>
+</body>
+</html>

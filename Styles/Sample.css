@@ -1,0 +1,39 @@
+﻿.onn 
+{
+    font-family:Cambria;
+    font-size:xx-large;
+    color:black;
+z-index:1;
+ height: 505px; 
+ width: 700px; 
+ margin-left: 50px;
+}
+.onp 
+{
+    font-family:Cambria;
+    font-size:large;
+    color:green;
+z-index:1;
+ height: 505px; 
+ width: 700px; 
+ margin-left: 50px;
+}
+.ont 
+{
+    font-family:Cambria;
+    font-size:xx-large;
+    color:black;
+z-index:1;
+ height: 505px; 
+ width: 700px; 
+ margin-left: 50px;
+}
+.onp 
+{
+    font-family:Cambria;
+    font-size:xx-large;
+z-index:1;
+ height: 505px; 
+ width: 350px; 
+ margin-left: 50px;
+}

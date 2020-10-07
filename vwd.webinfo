@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<!-- 
+  Visual Studio global web project settings.
+-->
+<VisualWebDeveloper>
+
+  <comReferences>
+    <reference Name="interop.adox" ID="{00000600-0000-0010-8000-00AA006D2EA4}\2.8\0"/>
+  </comReferences>
+</VisualWebDeveloper>
